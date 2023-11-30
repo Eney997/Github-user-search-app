@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Space Mono', monospace;
+    background: #141D2F;
+    display: grid;
+    place-items: center;
+}
+header {
+    display: grid;
+    place-items: center;
+    grid-template-areas: 'erti ori sami';
+    padding-top: 31px;
+}
+.headerh1 {
+    grid-area: erti;
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.headerh2 {
+    grid-area: ori;
+    padding-left: 110px;
+    color: #FFF;
+    text-align: right;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;
+} 
+.sun-icon {
+    grid-area: sami;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.Search-bar {
+    display: grid;
+    place-items: center;
+    padding-top: 31px;
+}
+input[type=text]{
+    width: 327px;
+    height: 60px;
+    border-radius: 15px;
+    background: #1E2A47;
+    border: none;
+    outline: none;
+    background-image: url(/assets/Search-Loop.svg);
+    background-repeat: no-repeat;
+    background-position: 4% 52% ;
+}
+.Input-Text {
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    text-align:bottom 0px;padding-left:45px;
+}
+::placeholder {
+    color: #FFF;
+}
+.Search-But {
+    position: absolute;
+    margin-left: 225px;
+    width: 84px;
+    height: 46px;
+    border-radius: 10px;
+    background: #0079FF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.ButtonIn-Style {
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.Inside-DivContainer {
+    width: 327px;
+    height: 517px;
+    border-radius: 15px;
+    background: #1E2A47;
+    margin-top: 16px;
+}
+.Box-1 {
+    display: grid;
+    place-items: center;
+    grid-template-areas:'one two'
+                        'one three'
+                        'one four'
+                        'five five';
+    
+}
+.Giti {
+    grid-area: one;
+    position: absolute;
+    padding-top: 32px;
+    margin-left: -60px;
+}
+.Name {
+    position: absolute;
+    margin-top: 80px;
+    grid-area: two;
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.Addres {
+    position: absolute;
+    margin-top: 130px;
+    margin-left: -41px;
+    grid-area: three;
+    color: #0079FF;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.Joint {
+    position: absolute;
+    margin-top: 184px;
+    margin-left: 40px;
+    grid-area: four;
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.Bio {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 11px;
+    grid-area: five;
+    width: 279px;
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+.Box-2 {
+    margin-top: 233px;
+    margin-left: 24px;
+    width: 279px;
+    height: 85px;
+    border-radius: 10px;
+    background: #141D2F;
+    display: grid;
+    place-items: center;
+    grid-template-areas:'pirveli mesame mexute'
+                        'meore meotxe meeqvse';
+}
+.Box-2-1 {
+    grid-area: pirveli;
+    width: 79px;
+    color: #FFF;
+    text-align: center;
+    font-family: Space Mono;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.Box-2-2 {
+    grid-area: meore;
+    width: 79px;
+    color: #FFF;
+    text-align: center;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.Box-2-3 {
+    grid-area: mesame;
+    width: 79px;
+    color: #FFF;
+    text-align: center;
+    font-family: Space Mono;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.Box-2-4 {
+    grid-area: meotxe;
+    width: 79px;
+    color: #FFF;
+    text-align: center;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.Box-2-5 {
+    grid-area: mexute;
+    width: 79px;
+    color: #FFF;
+    text-align: center;
+    font-family: Space Mono;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.Box-2-6 {
+    grid-area: meeqvse;
+    width: 79px;
+    color: #FFF;
+    text-align: center;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.Box-3 {
+    display: grid;
+    place-items: center;
+    grid-template-areas:'check san'
+                        'chain link'
+                        'twit avil'
+                        'build git';
+    row-gap: 17px;
+    margin-left: 24px;
+    margin-top: 30px;
+    position: absolute;
+}
+.icon1 {
+    grid-area: check;
+}
+.let1 {
+    grid-area: san;
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.icon2 {
+    grid-area: chain;
+}
+.let2 {
+    cursor: pointer;
+    grid-area: link;
+    margin-left: 45px;
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.icon3 {
+    grid-area: twit;
+}
+.let3 {
+    grid-area: avil;
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.icon4 {
+    grid-area: build;
+}
+.let4 {
+    position: relative;
+    margin-left: -47px;
+    grid-area: git;
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
