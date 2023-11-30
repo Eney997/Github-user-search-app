@@ -168,6 +168,7 @@ input[type=text]{
                         'meore meotxe meeqvse';
 }
 .Box-2-1 {
+    margin-top: 10px;
     grid-area: pirveli;
     width: 79px;
     color: #FFF;
@@ -179,6 +180,7 @@ input[type=text]{
     line-height: normal;
 }
 .Box-2-2 {
+    margin-top: -12px;
     grid-area: meore;
     width: 79px;
     color: #FFF;
@@ -191,6 +193,7 @@ input[type=text]{
     text-transform: uppercase;
 }
 .Box-2-3 {
+    margin-top: 10px;
     grid-area: mesame;
     width: 79px;
     color: #FFF;
@@ -202,6 +205,7 @@ input[type=text]{
     line-height: normal;
 }
 .Box-2-4 {
+    margin-top: -12px;
     grid-area: meotxe;
     width: 79px;
     color: #FFF;
@@ -214,6 +218,7 @@ input[type=text]{
     text-transform: uppercase;
 }
 .Box-2-5 {
+    margin-top: 10px;
     grid-area: mexute;
     width: 79px;
     color: #FFF;
@@ -225,6 +230,7 @@ input[type=text]{
     line-height: normal;
 }
 .Box-2-6 {
+    margin-top: -12px;
     grid-area: meeqvse;
     width: 79px;
     color: #FFF;
@@ -245,13 +251,15 @@ input[type=text]{
                         'build git';
     row-gap: 17px;
     margin-top: 30px;
-    margin-left: -55px;
+    margin-left: -65px;
 }
 .icon1 {
     grid-area: check;
+    cursor: pointer;
 }
 .let1 {
-    margin-left: -160px;
+    cursor: pointer;
+    margin-left: -222px;
     grid-area: san;
     color: #FFF;
     font-family: Space Mono;
@@ -261,10 +269,11 @@ input[type=text]{
     line-height: normal;
 }
 .icon2 {
+    cursor: pointer;
     grid-area: chain;
 }
 .let2 {
-    margin-left: -110px;
+    margin-left: -173px;
     cursor: pointer;
     grid-area: link;
     color: #FFF;
@@ -275,10 +284,12 @@ input[type=text]{
     line-height: normal;
 }
 .icon3 {
+    cursor: pointer;
     grid-area: twit;
 }
 .let3 {
-    margin-left: -160px;
+    cursor: pointer;
+    margin-left: -220px;
     grid-area: avil;
     color: #FFF;
     font-family: Space Mono;
@@ -288,10 +299,13 @@ input[type=text]{
     line-height: normal;
 }
 .icon4 {
+    cursor: pointer;
     grid-area: build;
+    margin-left: 2px;
 }
 .let4 {
-    margin-left: -205px;
+    cursor: pointer;
+    margin-left: -267px;
     grid-area: git;
     color: #FFF;
     font-family: Space Mono;
