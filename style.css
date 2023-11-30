@@ -26,8 +26,8 @@ header {
     line-height: normal;
 }
 .headerh2 {
+    margin-left: 100px;
     grid-area: ori;
-    padding-left: 110px;
     color: #FFF;
     text-align: right;
     font-family: Space Mono;
@@ -39,13 +39,12 @@ header {
 } 
 .sun-icon {
     grid-area: sami;
-    padding-left: 15px;
     cursor: pointer;
 }
 .Search-bar {
     display: grid;
     place-items: center;
-    padding-top: 31px;
+    margin-top: 35px;
 }
 input[type=text]{
     width: 327px;
@@ -71,8 +70,8 @@ input[type=text]{
     color: #FFF;
 }
 .Search-But {
-    position: absolute;
-    margin-left: 225px;
+    margin-top: -60px;
+    margin-left: 220px;
     width: 84px;
     height: 46px;
     border-radius: 10px;
@@ -103,17 +102,17 @@ input[type=text]{
                         'one three'
                         'one four'
                         'five five';
+        
     
 }
 .Giti {
     grid-area: one;
-    position: absolute;
     padding-top: 32px;
-    margin-left: -60px;
+    margin-left: -20px;
 }
 .Name {
-    position: absolute;
-    margin-top: 80px;
+    margin-top: -30px;
+    margin-left: -100px;
     grid-area: two;
     color: #FFF;
     font-family: Space Mono;
@@ -123,9 +122,8 @@ input[type=text]{
     line-height: normal;
 }
 .Addres {
-    position: absolute;
-    margin-top: 130px;
-    margin-left: -41px;
+    margin-top: -85px;
+    margin-left: -140px;
     grid-area: three;
     color: #0079FF;
     font-family: Space Mono;
@@ -135,9 +133,8 @@ input[type=text]{
     line-height: normal;
 }
 .Joint {
-    position: absolute;
-    margin-top: 184px;
-    margin-left: 40px;
+    margin-top: -30px;
+    margin-left: -62px;
     grid-area: four;
     color: #FFF;
     font-family: Space Mono;
@@ -147,9 +144,8 @@ input[type=text]{
     line-height: normal;
 }
 .Bio {
-    position: absolute;
-    margin-top: 350px;
-    margin-left: 11px;
+    margin-top: 20px;
+    margin-left: 24px;
     grid-area: five;
     width: 279px;
     color: #FFF;
@@ -160,7 +156,7 @@ input[type=text]{
     line-height: 25px;
 }
 .Box-2 {
-    margin-top: 233px;
+    margin-top: 23px;
     margin-left: 24px;
     width: 279px;
     height: 85px;
@@ -248,14 +244,14 @@ input[type=text]{
                         'twit avil'
                         'build git';
     row-gap: 17px;
-    margin-left: 24px;
     margin-top: 30px;
-    position: absolute;
+    margin-left: -55px;
 }
 .icon1 {
     grid-area: check;
 }
 .let1 {
+    margin-left: -160px;
     grid-area: san;
     color: #FFF;
     font-family: Space Mono;
@@ -268,9 +264,9 @@ input[type=text]{
     grid-area: chain;
 }
 .let2 {
+    margin-left: -110px;
     cursor: pointer;
     grid-area: link;
-    margin-left: 45px;
     color: #FFF;
     font-family: Space Mono;
     font-size: 13px;
@@ -282,6 +278,7 @@ input[type=text]{
     grid-area: twit;
 }
 .let3 {
+    margin-left: -160px;
     grid-area: avil;
     color: #FFF;
     font-family: Space Mono;
@@ -294,8 +291,7 @@ input[type=text]{
     grid-area: build;
 }
 .let4 {
-    position: relative;
-    margin-left: -47px;
+    margin-left: -205px;
     grid-area: git;
     color: #FFF;
     font-family: Space Mono;
