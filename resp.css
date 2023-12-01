@@ -1,0 +1,165 @@
+@media (width > 768px){
+    header {
+        margin-top: 90px;
+    }
+    .headerh2 {
+        padding-left: 240px;
+    }
+    .Input-Text {
+        font-size: 18px;
+        text-align:bottom 0px;padding-left:65px;
+    }
+    .Search-But {
+        width: 106px;
+        height: 50px;
+        margin-left: 430px;
+        margin-top: -68px;
+    }
+    .ButtonIn-Style {
+        font-size: 16px;
+    }
+    input[type=text]{
+        width: 573px;
+        height: 69px;
+    }
+    .Inside-DivContainer {
+        width: 573px;
+        height: 481px;
+    }
+    .GitIcon {
+        background-image: url(/assets/GitCat-Tab&Desk.svg);
+        width: 117px;
+        height: 117px;
+        margin-top: 40px;
+        margin-left: -100px;
+    }
+    .Giti {
+        width: 0px;
+    }
+    .Name {
+        font-size: 26px;
+        margin-left: -300px;
+        margin-top: -50px;
+    }
+    .Addres {
+        font-size: 16px;
+        margin-left: -390px;
+        margin-top: -120px;
+    }
+    .Joint {
+        font-size: 15px;
+        margin-left: -300px;
+    }
+    .Bio {
+        width: 493px;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .Box-2 {
+        width: 493px;
+        height: 85px;
+        margin-left: 40px;
+    }
+    .Box-2-1 {
+        font-size: 13px;
+    }
+    .Box-2-2 {
+        font-size: 22px;
+    }
+    .Box-2-3 {
+        font-size: 13px;
+    }
+    .Box-2-4 {
+        font-size: 22px;
+    }
+    .Box-2-5 {
+        font-size: 13px;
+    }
+    .Box-2-6 {
+        font-size: 22px;
+    }
+    .Box-3 {
+        display: grid;
+        place-items: center;
+        grid-template-areas:'check san twit avil'
+                            'chain link build git';
+    }
+    .icon1 {
+        margin-left: 50px;
+    }
+    .icon2 {
+        margin-left: 50px;
+    }
+    .icon3 {
+        margin-left: -100px;
+    }
+    .icon4 {
+        margin-left: -100px;
+    }
+    .let1 {
+        margin-left: -150px;
+        font-size: 15px;
+    }
+    .let2 {
+        padding-left: 80px;
+        font-size: 15px;
+    }
+    .let3 {
+        font-size: 15px;
+        padding-left: 60px;
+    }
+    .let4 {
+        font-size: 15px;
+        padding-left: 55px;
+    }
+}
+@media (width > 1440px) {
+    input[type=text]{
+        width: 730px;
+        height: 69px;
+    }
+    .Search-But {
+        margin-left: 580px;
+        margin-top: -68px;
+    }
+    .Inside-DivContainer {
+        width:730px;
+        height: 444px;
+    }
+    .Box-1 {
+        display: grid;
+        place-items: center;
+        grid-template-areas:'one two four'
+                            'one three four'
+                            'one five five';                
+    }
+    .GitIcon {
+        margin-left: 30px;
+    }
+    .Name {
+        padding-left: 250px;
+    }
+    .Addres {
+        padding-left: 250px;
+    }
+    .Joint {
+        padding-left: 300px;
+        margin-top: -51px;
+    }
+    .Bio {
+        margin-top: -30px;
+        margin-left: -20px;
+    }
+    .Box-2 {
+        width: 480px;
+        height: 85px;
+        margin-left: 196px;
+    }
+    .Box-3 {
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    .headerh2 {
+        padding-left: 420px;
+    }
+}
