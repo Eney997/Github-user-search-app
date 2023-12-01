@@ -87,16 +87,16 @@
         grid-template-areas:'check san twit avil'
                             'chain link build git';
     }
-    .icon1 {
+    #icon1 {
         margin-left: 50px;
     }
-    .icon2 {
+    #icon2 {
         margin-left: 50px;
     }
-    .icon3 {
+    #icon3 {
         margin-left: -100px;
     }
-    .icon4 {
+    #icon4 {
         margin-left: -100px;
     }
     .let1 {

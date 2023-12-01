@@ -4,9 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --darkPageBackground-color:#141D2F;
+    --darkPageDarkBlue-color:#1E2A47;
+    --darkPageWhite-color:#FFF;
+}
 body {
     font-family: 'Space Mono', monospace;
-    background: #141D2F;
+    background: var(--darkPageBackground-color);
     display: grid;
     place-items: center;
 }
@@ -18,7 +23,7 @@ header {
 }
 .headerh1 {
     grid-area: erti;
-    color: #FFF;
+    color:var(--darkPageWhite-color);
     font-family: Space Mono;
     font-size: 26px;
     font-style: normal;
@@ -28,7 +33,7 @@ header {
 .headerh2 {
     margin-left: 100px;
     grid-area: ori;
-    color: #FFF;
+    color:var(--darkPageWhite-color);
     text-align: right;
     font-family: Space Mono;
     font-size: 13px;
@@ -40,6 +45,8 @@ header {
 .sun-icon {
     grid-area: sami;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 .Search-bar {
     display: grid;
@@ -50,7 +57,7 @@ input[type=text]{
     width: 327px;
     height: 60px;
     border-radius: 15px;
-    background: #1E2A47;
+    background:var(--darkPageDarkBlue-color);
     border: none;
     outline: none;
     background-image: url(/assets/Search-Loop.svg);
@@ -58,7 +65,7 @@ input[type=text]{
     background-position: 4% 52% ;
 }
 .Input-Text {
-    color: #FFF;
+    color: var(--darkPageWhite-color);
     font-family: Space Mono;
     font-size: 13px;
     font-style: normal;
@@ -67,7 +74,7 @@ input[type=text]{
     text-align:bottom 0px;padding-left:45px;
 }
 ::placeholder {
-    color: #FFF;
+    color:var(--darkPageWhite-color);
 }
 .Search-But {
     margin-top: -60px;
@@ -81,7 +88,7 @@ input[type=text]{
     cursor: pointer;
 }
 .ButtonIn-Style {
-    color: #FFF;
+    color: #fff;
     font-family: Space Mono;
     font-size: 14px;
     font-style: normal;
@@ -92,7 +99,7 @@ input[type=text]{
     width: 327px;
     height: 517px;
     border-radius: 15px;
-    background: #1E2A47;
+    background: var(--darkPageDarkBlue-color);
     margin-top: 16px;
 }
 .Box-1 {
@@ -112,7 +119,7 @@ input[type=text]{
     margin-top: -30px;
     margin-left: -100px;
     grid-area: two;
-    color: #FFF;
+    color: var(--darkPageWhite-color);
     font-family: Space Mono;
     font-size: 16px;
     font-style: normal;
@@ -134,7 +141,7 @@ input[type=text]{
     margin-top: -30px;
     margin-left: -62px;
     grid-area: four;
-    color: #FFF;
+    color:var(--darkPageWhite-color);
     font-family: Space Mono;
     font-size: 13px;
     font-style: normal;
@@ -146,7 +153,7 @@ input[type=text]{
     margin-left: 24px;
     grid-area: five;
     width: 279px;
-    color: #FFF;
+    color:var(--darkPageWhite-color);
     font-family: Space Mono;
     font-size: 13px;
     font-style: normal;
@@ -159,7 +166,7 @@ input[type=text]{
     width: 279px;
     height: 85px;
     border-radius: 10px;
-    background: #141D2F;
+    background:var(--darkPageBackground-color);
     display: grid;
     place-items: center;
     grid-template-areas:'pirveli mesame mexute'
@@ -169,7 +176,7 @@ input[type=text]{
     margin-top: 10px;
     grid-area: pirveli;
     width: 79px;
-    color: #FFF;
+    color: var(--darkPageWhite-color);
     text-align: center;
     font-family: Space Mono;
     font-size: 11px;
@@ -181,7 +188,7 @@ input[type=text]{
     margin-top: -12px;
     grid-area: meore;
     width: 79px;
-    color: #FFF;
+    color: var(--darkPageWhite-color);
     text-align: center;
     font-family: Space Mono;
     font-size: 16px;
@@ -194,7 +201,7 @@ input[type=text]{
     margin-top: 10px;
     grid-area: mesame;
     width: 79px;
-    color: #FFF;
+    color: var(--darkPageWhite-color);
     text-align: center;
     font-family: Space Mono;
     font-size: 11px;
@@ -206,7 +213,7 @@ input[type=text]{
     margin-top: -12px;
     grid-area: meotxe;
     width: 79px;
-    color: #FFF;
+    color: var(--darkPageWhite-color);
     text-align: center;
     font-family: Space Mono;
     font-size: 16px;
@@ -219,7 +226,7 @@ input[type=text]{
     margin-top: 10px;
     grid-area: mexute;
     width: 79px;
-    color: #FFF;
+    color: var(--darkPageWhite-color);
     text-align: center;
     font-family: Space Mono;
     font-size: 11px;
@@ -231,7 +238,7 @@ input[type=text]{
     margin-top: -12px;
     grid-area: meeqvse;
     width: 79px;
-    color: #FFF;
+    color: var(--darkPageWhite-color);
     text-align: center;
     font-family: Space Mono;
     font-size: 16px;
@@ -251,30 +258,36 @@ input[type=text]{
     margin-top: 30px;
     margin-left: -65px;
 }
-.icon1 {
+#icon1 {
     grid-area: check;
     cursor: pointer;
+    color:var(--darkPageWhite-color);
+    width: 20px;
+    height: 20px;
 }
 .let1 {
     cursor: pointer;
     margin-left: -222px;
     grid-area: san;
-    color: #FFF;
+    color: var(--darkPageWhite-color);
     font-family: Space Mono;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-.icon2 {
+#icon2 {
     cursor: pointer;
     grid-area: chain;
+    color:var(--darkPageWhite-color);
+    width: 20px;
+    height: 20px;
 }
 .let2 {
     margin-left: -173px;
     cursor: pointer;
     grid-area: link;
-    color: #FFF;
+    color: var(--darkPageWhite-color);
     font-family: Space Mono;
     font-size: 13px;
     font-style: normal;
@@ -282,34 +295,50 @@ input[type=text]{
     line-height: normal;
     text-decoration-line: underline;
 }
-.icon3 {
+#icon3 {
     cursor: pointer;
     grid-area: twit;
+    color:var(--darkPageWhite-color);
+    width: 20px;
+    height: 20px;
 }
 .let3 {
     cursor: pointer;
     margin-left: -220px;
     grid-area: avil;
-    color: #FFF;
+    color: var(--darkPageWhite-color);
     font-family: Space Mono;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-.icon4 {
+#icon4 {
     cursor: pointer;
     grid-area: build;
     margin-left: 2px;
+    color: var(--darkPageWhite-color);
+    width: 20px;
+    height: 20px;
 }
 .let4 {
     cursor: pointer;
     margin-left: -267px;
     grid-area: git;
-    color: #FFF;
+    color: var(--darkPageWhite-color);
     font-family: Space Mono;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
+#moonIcon {
+    display: none;
+}
+.Light-mode {
+    --darkPageBackground-color: #F6F8FF;
+    --darkPageDarkBlue-color:#FEFEFE;
+    --darkPageWhite-color:#4B6A9B;
+    transition: 1.5s;
+}
+

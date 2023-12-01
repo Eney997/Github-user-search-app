@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/afb69e72c1.js" crossorigin="anonymous"></script>
     <script src="app.js" defer></script>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/resp.css">
@@ -13,8 +14,9 @@
     <div class="container">
         <header>
             <h1 class="headerh1">devfinder</h1>
-                <h2 class="headerh2">LIGHT</h2>
-            <img class="sun-icon" src="/assets/Sun-mob.svg">
+                <h2 id="headh2" class="headerh2">LIGHT</h2>
+            <img class="sun-icon" src="/assets/Sun-mob.svg" id="iconmoonnsun">
+            <img src="/assets/Moon-mob.svg" id="moonIcon">
         </header>
         <div class="Search-bar">
                  <input class="Input-Text" type="text" maxlength="23" placeholder="Search GitHub username…">
@@ -39,13 +41,13 @@
                 <h6 class="Box-2-6">9</h6>
             </div>
             <div class="Box-3">
-                   <img class="icon1" src="/assets/Check-in.svg">
+                <i id="icon1"  class="fa-solid fa-location-dot "></i>
                        <h1 class="let1">San Francisco</h1>
-                           <img class="icon2" src="/assets/Chain.svg">
+                            <i id="icon2" class="fa-solid fa-link"></i>
                                 <a class="let2">https://github.blog</a>
-                            <img class="icon3" src="/assets/Twitter.svg">
+                            <i id="icon3" class="fa-brands fa-twitter"></i>
                         <h3 class="let3">Not Available</h3>
-                    <img class="icon4" src="/assets/Office-Building.svg">
+                    <i id="icon4" class="fa-solid fa-building"></i>
                 <h4 class="let4">@github</h4>
             </div>
         </div>
