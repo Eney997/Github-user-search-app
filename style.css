@@ -114,11 +114,11 @@ input[type=text]{
 .Giti {
     grid-area: one;
     padding-top: 32px;
-    margin-left: -20px;
+    margin-left: 20px;
 }
 .Name {
+    width: 210px;
     margin-top: -30px;
-    margin-left: -100px;
     grid-area: two;
     color: var(--darkPageWhite-color);
     font-family: Space Mono;
@@ -128,8 +128,9 @@ input[type=text]{
     line-height: normal;
 }
 .Addres {
+    width: 100px;
     margin-top: -85px;
-    margin-left: -140px;
+    margin-left: -105px;
     grid-area: three;
     color: #0079FF;
     font-family: Space Mono;
@@ -139,8 +140,9 @@ input[type=text]{
     line-height: normal;
 }
 .Joint {
+    width: 150px;
     margin-top: -30px;
-    margin-left: -62px;
+    margin-left: -57px;
     grid-area: four;
     color:var(--darkPageWhite-color);
     font-family: Space Mono;
@@ -257,7 +259,7 @@ input[type=text]{
                         'build git';
     row-gap: 17px;
     margin-top: 30px;
-    margin-left: -65px;
+    margin-left: -50px;
 }
 #icon1 {
     grid-area: check;
@@ -268,7 +270,7 @@ input[type=text]{
 }
 .let1 {
     cursor: pointer;
-    margin-left: -222px;
+    margin-left: -150px;
     grid-area: san;
     color: var(--darkPageWhite-color);
     font-family: Space Mono;
@@ -276,6 +278,7 @@ input[type=text]{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    width: 200px;
 }
 #icon2 {
     cursor: pointer;
@@ -285,7 +288,8 @@ input[type=text]{
     height: 20px;
 }
 .let2 {
-    margin-left: -173px;
+    width: 200px;
+    margin-left: -145px;
     cursor: pointer;
     grid-area: link;
     color: var(--darkPageWhite-color);
@@ -304,8 +308,9 @@ input[type=text]{
     height: 20px;
 }
 .let3 {
+    width: 200px;
     cursor: pointer;
-    margin-left: -220px;
+    margin-left: -150px;
     grid-area: avil;
     color: var(--darkPageWhite-color);
     font-family: Space Mono;
@@ -323,8 +328,9 @@ input[type=text]{
     height: 20px;
 }
 .let4 {
+    width: 200px;
     cursor: pointer;
-    margin-left: -267px;
+    margin-left: -150px;
     grid-area: git;
     color: var(--darkPageWhite-color);
     font-family: Space Mono;
