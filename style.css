@@ -113,8 +113,9 @@ input[type=text]{
 }
 .Giti {
     grid-area: one;
-    padding-top: 32px;
-    margin-left: 20px;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 13px;
 }
 .Name {
     width: 210px;
@@ -288,8 +289,9 @@ input[type=text]{
     height: 20px;
 }
 .let2 {
-    width: 200px;
+    width: 190px;
     margin-left: -145px;
+    margin-top: -5px;
     cursor: pointer;
     grid-area: link;
     color: var(--darkPageWhite-color);
