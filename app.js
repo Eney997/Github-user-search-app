@@ -25,7 +25,7 @@ icon.onclick = function () {
     const gitiBlog = document.querySelector('.let2');
     const twitterSoc = document.querySelector('.let3');
     const offBuild = document.querySelector('.let4');
-    const persIcon = document.getElementById('GitIconMob');
+    const persIcon = document.querySelector('.Giti');
 
     searchBut.addEventListener('click', () => {
         const username = inputText.value.trim();
@@ -54,8 +54,6 @@ icon.onclick = function () {
                     twitterSoc.textContent = data.twitter_username || 'Not available';
                     offBuild.textContent = data.company || 'Not available';
                     persIcon.src = data.avatar_url;
-                    persIcon.style.width = '70px'
-                    persIcon.style.borderRadius = '70px'
                 }
             })
             .catch(error => {

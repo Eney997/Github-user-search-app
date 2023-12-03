@@ -116,6 +116,9 @@ input[type=text]{
     position: relative;
     margin-top: 25px;
     margin-left: 13px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
 }
 .Name {
     width: 210px;

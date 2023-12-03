@@ -37,7 +37,7 @@
         margin-left: 20px;
     }
     .Giti {
-        width: 0px;
+        display: none;
     }
     .Name {
         width: 380px;
