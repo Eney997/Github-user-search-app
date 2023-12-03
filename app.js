@@ -47,7 +47,8 @@ searchBut .addEventListener('click', () => {
                 persIcon.src = userData.avatar_url;
              })
             .catch(error => {
-                console.error('Error:', error);
+                console.log('Error : 404', error);
+                inputText.innerHTML = 'Type correct user'
             });
     }
 );
