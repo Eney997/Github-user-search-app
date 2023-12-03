@@ -27,10 +27,11 @@ const twitterSoc = document.querySelector('.let3');
 const offBuild = document.querySelector('.let4');
 const persIcon = document.getElementById('GitIconMob');
 
-searchBut .addEventListener('click', () => {
-    const username = inputText.value;
-        fetch(`https://api.github.com/users/${username}`)
-            .then(response => response.json()) 
+searchBut.addEventListener('click', gavparsotData)
+
+    function gavparsotData(){
+        const username = inputText.value;
+        fetch(`https://api.github.com/users/${username}`).then(response => response.json()) 
             .then(userData => {
                 nameDisplay.textContent = userData.name || 'Not available';
                 userShch.textContent = `@${userData.login}`;
@@ -51,7 +52,6 @@ searchBut .addEventListener('click', () => {
                 inputText.innerHTML = 'Type correct user'
             });
     }
-);
 
 
 
