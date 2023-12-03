@@ -12,6 +12,7 @@ icon.onclick = function () {
     }
 }
 
+
     const searchBut = document.querySelector('.Search-But');
     const inputText = document.querySelector('.Input-Text');
     const nameDisplay = document.querySelector('.Name');
@@ -25,47 +26,34 @@ icon.onclick = function () {
     const gitiBlog = document.querySelector('.let2');
     const twitterSoc = document.querySelector('.let3');
     const offBuild = document.querySelector('.let4');
-    const persIcon = document.querySelector('.Giti');
+    const persIcon = document.getElementById('GitIconMob');
 
-    searchBut.addEventListener('click', () => {
-        const username = inputText.value.trim();
-        if (username) {
-            fetchUserDetails(username);
+    searchBut .addEventListener('click', () => {
+        const username = inputText.value;
+            fetch(`https://api.github.com/users/${username}`)
+                .then(response => response.json()) 
+                .then(userData => {
+                   
+                    nameDisplay.textContent = userData.name || 'Not available';
+                    userShch .textContent = `@${userData.login}`;
+                    joinDate .textContent = `Joined ${(new Date(userData.created_at)).toLocaleDateString()}`;
+                    bioShech .textContent = userData.bio || 'Not available';
+                    repos .textContent = userData.public_repos;
+                    followers .textContent = userData.followers;
+                    following .textContent = userData.following;
+                    locationAI.textContent = userData.location || 'Not available';
+                    gitiBlog .textContent = 'Not available';
+                    gitiBlog .href = userData.blog || '#';
+                    twitterSoc .textContent = userData.twitter_username || 'Not available';
+                    offBuild .textContent = userData.company || 'Not available';
+                    persIcon .src = userData.avatar_url;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
         }
-    });
+    );
 
-    function fetchUserDetails(username) {
-        const apiUrl = `https://api.github.com/users/${username}`;
-
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(data => {
-                if (data) {
-                    nameDisplay.textContent = data.name || 'Not available';
-                    userShch.textContent = data.login ||  'Not available';
-                    joinDate.textContent = `Joined ${formatDate(data.created_at)}`;
-                    bioShech.textContent = data.bio || 'Not available';
-                    repos.textContent = data.public_repos;
-                    followers.textContent = data.followers;
-                    following.textContent = data.following;
-                    locationAI.textContent = data.location || 'Not available';
-                    gitiBlog.href = data.blog || '#';
-                    gitiBlog.textContent = 'Im hiding here';
-                    twitterSoc.textContent = data.twitter_username || 'Not available';
-                    offBuild.textContent = data.company || 'Not available';
-                    persIcon.src = data.avatar_url;
-                }
-            })
-            .catch(error => {
-                console.error('Error user data:', error);
-            });
-    }
-
-    function formatDate(dateString) {
-        const dateObj = new Date(dateString);
-        const chavaformatot = `${dateObj.toLocaleString('default', { month: 'short' })} ${dateObj.getDate()} ${dateObj.getFullYear()}`;
-        return chavaformatot;
-    }
 
 
 
